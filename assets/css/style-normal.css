@@ -1,0 +1,115 @@
+/*
+	CreatorX - a photography theme by Phantomus
+	phantomus.com | @phantomus_host
+*/
+
+body {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body,input,textarea,select {
+	font-size: 15pt;
+}
+
+.post-content {
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+}	
+				
+.post-content p, .post-content h1, .post-content h2, .post-content h4, 
+.post-content h4, .post-content h5, .post-content h6, .post-content ul, .post-content ol, 
+.post-content dl, .post-content table {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	width: 100%;
+	padding-left: 0;
+}
+
+.post-content p.img {
+	width: 100%;
+	padding: 0;
+}
+
+.post-content p.img.left-image {
+	float: left;
+	width: 50%;
+	margin-top: 0;
+}	
+
+.post-content p.img.right-image {
+	float: right;
+	width: 50%;
+	margin-top: 0;
+}	
+
+.post-content p.left-image-desc {
+	width: 50%;
+	float: right;
+	text-align: left;
+	margin-top: 0;
+	padding-left: 5%;
+}
+
+.post-content p.right-image-desc {
+	width: 50%;
+	float: left;
+	text-align: left;
+	padding-right: 5%;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.post-content p.left-as-image {
+	padding-right: 1em;
+	margin-top: 0;
+}
+	
+.post-content p.right-as-image {
+	float: right;
+	width: 50%;
+	padding-left: 1em;
+	margin-top: 0;
+}
+
+.post-content p.clear {
+	clear: both;
+	float: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+	
+.post-content p:last-child {
+	margin-bottom: 2em;
+}
+
+.post-content img {
+	width: 100%;
+	display: block;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.post-content .img {
+	background-size: 100% 100%, cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	height: auto;
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.post-content .img.left {
+	float: left;
+	display: inline-block;
+}
+
+.post-content .img.right {
+	float: right;
+	display: inline-block;
+}

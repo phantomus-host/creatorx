@@ -1,0 +1,204 @@
+/*
+	CreatorX - a photography theme by Phantomus
+	phantomus.com | @phantomus_host
+*/
+
+body {
+	width: 100%;
+}
+
+body,input,textarea,select {
+	font-size: 13pt;
+	line-height: 1.5em;
+}
+	
+.home-image {
+	margin-top:-1px;
+}
+	
+.post-cover-image.home-style {
+	text-align: center;
+	padding: 0 2em 0 2em;
+}
+	
+.main.home-style h2, .post-cover-image.home-style h2 {
+	font-size: 2.25em;
+	line-height: 1.2em;
+	letter-spacing: -1px;
+}
+	
+
+#header {
+	height: 2.5em;
+	line-height: 2.5em;
+}
+
+#logo {
+	text-align: center;
+	position: relative;
+	left: 0;
+	top: 0;
+	height: auto;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-left: 1em;
+	max-width: 70%;
+	text-align: left;
+}
+	
+#logo a {
+	font-size: 1em;
+}
+	
+#nav {
+	display: none;
+}
+
+#nav-mobile {
+	display: inline-block;
+	right: 1em;
+}
+
+#nav-mobile .in-post {
+	color: #fff;
+}
+
+#header span.info {
+	display: none;
+}
+	
+/*** footer ***/
+	
+#footer {
+}
+		
+#footer .menu {
+}
+		
+#footer .menu li {
+	border-left: 0;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+			
+#footer .menu li:first-child {
+	padding-top: 0;
+}
+
+#footer .menu li a {
+	line-height: 1.5em;
+}
+				
+			
+/*** post ***/
+	
+.post-content {
+	text-align: center;
+	padding-top: 0;
+}	
+		
+.post-content p, .post-content h1, .post-content h2, .post-content h4, 
+.post-content h4, .post-content h5, .post-content h6, .post-content ul, .post-content ol, 
+.post-content dl, .post-content table {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	width: 95%;
+	padding-left: 5%;
+}
+
+.post-content h1 {
+	font-size: 2.25em;
+	letter-spacing: -2px;
+	line-height: 1.25em;
+	margin-bottom: 5px;
+}	
+
+.post-content h2 {
+	font-size: 2em;
+	letter-spacing: -2px;
+	line-height: 1.25em;
+	margin-bottom: 5px;
+}
+
+.post-content h3 {
+	font-size: 1.8em;
+	letter-spacing: 0px;
+	line-height: 1.25em;
+	margin-bottom: 5px;
+}
+
+.post-content h4 {
+	font-size: 1.6em;
+	letter-spacing: 0px;
+	line-height: 1.25em;
+	margin-bottom: 5px;
+}
+
+.post-content h5 {
+	font-size: 1.4em;
+	letter-spacing: 0px;
+	line-height: 1.25em;
+	margin-bottom: 5px;
+}
+
+.post-content h6 {
+	font-size: 1.2em;
+	letter-spacing: 0px;
+	line-height: 1.25em;
+	margin-bottom: 5px;
+}
+
+.post-content p.img {
+	width: 100%;
+	padding: 0;
+}
+
+.post-content p.img.left-image {
+	float: none;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+}	
+
+.post-content p.img.right-image {
+	float: none;
+	width: 100%;
+	margin-top: 2em;
+}	
+
+.post-content p.left-image-desc {
+	width: 90%;
+	float: none;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.post-content p.right-image-desc {
+	width: 100%;
+	padding-left: 5%;
+	float: none;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.post-content p.left-as-image {
+	padding-right: 0;
+	margin-top: 2em;
+}
+	
+.post-content p.right-as-image {
+	float: none;
+	width: 100%;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.post-content p.clear {
+	clear: both;
+	float: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}

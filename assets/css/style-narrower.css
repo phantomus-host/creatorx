@@ -1,0 +1,62 @@
+/*
+	CreatorX - a photography theme by Phantomus
+	phantomus.com | @phantomus_host
+*/
+
+body,input,textarea,select {
+	font-size: 16pt;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container > .container {
+	width: 100% !important;
+}
+						
+.post-content {
+	padding-top: 0;
+}
+
+#nav {
+	display: none;
+}
+
+#nav-mobile {
+	display: inline-block;
+	right: 0;
+}
+
+#nav-mobile .in-post {
+	color: #fff;
+}
+
+.mm-menu {
+	max-width: 40% !important;
+}
+	
+#footer {
+	height: auto;
+	line-height: inherit;
+	text-align: center;
+	padding: 2em 1em 2em 1em;
+}
+
+#footer .actions {
+	position: relative;
+	left: 0;
+	top: 0;
+	height: auto;
+	line-height: inherit;
+	margin: 0 0 1em 0;
+}
+
+#footer .menu {
+	position: relative;
+	right: 0;
+	top: 0;
+	height: auto;
+	line-height: inherit;
+}
+		
+		

@@ -1,0 +1,20 @@
+<!-- Header -->
+<header id="header">
+	<h1 id="logo">{{@blog.title}}</h1>{{#if tag}}<span class="info">&nbsp;|&nbsp;on {{tag.name}}</span>{{/if}}{{#if author}}<span class="info">&nbsp;|&nbsp;by {{author.name}}</span>{{/if}}
+
+	<nav id="nav">
+		<ul>
+			{{> "menu-top" }}
+		</ul>
+	</nav>
+	
+	<nav id="nav-mobile">
+		<a href="#mobile-menu" class="icon fa-bars"><span class="label">Menu</span></a>
+	</nav>
+		<nav id="mobile-menu">
+			<ul>
+				{{> "menu-top" }}
+			</ul>
+		</nav>
+	</nav>
+</header>

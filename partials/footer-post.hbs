@@ -1,0 +1,55 @@
+<footer id="footer">
+			  
+	<ul class="actions">
+		<li><a href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&amp;text=“{{title}}” by {{author.name}}" class="icon fa-twitter" data-lang="en" target="_blank"><span class="label">Twitter</span></a></li>
+		<li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="icon fa-facebook" data-lang="en" target="_blank"><span class="label">Facebook</span></a></li>
+		<li><a href="https://plus.google.com/share?url={{url absolute="true"}}" class="icon fa-google-plus" data-lang="en" target="_blank"><span class="label">Google+</span></a></li>
+		<li><a href="http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;media={{image}}?w=1280&amp;q=92&amp;fm=pjpg&amp;auto=format&amp;description=“{{title}}” by {{author.name}}" class="icon fa-pinterest" data-lang="en" target="_blank"><span class="label">Pinterest</span></a></li>
+	</ul>
+
+	<section class="about-author">
+		<h4>About the author</h4>
+		{{#if author.image}}<span class="author-photo" style="background-image: url('{{author.image}}')"></span>{{/if}}
+		<h5>{{#author}}<a href="{{url}}">{{name}}</a>{{/author}}</h5>
+		<p>{{author.bio}}</p>
+	</section>
+	
+	
+	<div id="disqus_thread_container" style="display: none">
+		<h4>Comments</h4>
+		<div id="disqus_thread">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (disqusShortName) {
+			var loadDisqus = true;
+			if (typeof DISQUS != 'undefined') {
+				DISQUS.reset({reload: true, config: function () {
+						this.page.identifier = '{{id}}';
+						this.page.url = location.protocol + '//' + window.location.host + '{{url}}#!/{{id}}';
+					}
+				});
+				loadDisqus = false;
+			}
+
+			var disqus_shortname = disqusShortName;
+			var disqus_identifier = '{{id}}';
+			var disqus_url = location.protocol + '//' + window.location.host + '{{url}}#!/{{id}}';
+			
+			if (loadDisqus) {
+				$('#disqus_thread_container').css('display', 'block');
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			}
+		}
+	</script>
+	
+	<ul class="menu">
+		{{> "menu-bottom" }}
+	</ul>
+
+</footer>

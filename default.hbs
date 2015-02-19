@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!--
+	CreatorX - a photography theme by Phantomus
+	phantomus.com | @phantomus_host
+-->
+<html>
+	<head>
+		{{! Document Settings }}
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		{{! Page Meta }}
+		<title>{{meta_title}}</title>
+		<meta name="description" content="{{meta_description}}" />
+
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+		
+		<!--[if lte IE 8]><script src="{{asset "css/ie/html5shiv.js"}}"></script><![endif]-->
+		<script src="{{asset "js/jquery.min.js"}}"></script>
+		<script src="{{asset "js/jquery.mmenu.min.all.js"}}"></script>
+		<script src="{{asset "js/skel.min.js"}}"></script>
+		<script src="{{asset "js/init.js"}}"></script>
+		<noscript>
+			<link rel="stylesheet" href="{{asset "css/skel.css"}}" />
+			<link rel="stylesheet" href="{{asset "css/style.css"}}" />
+			<link rel="stylesheet" href="{{asset "css/style-wide.css"}}" />
+			<link rel="stylesheet" href="{{asset "css/style-normal.css"}}" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{asset "css/ie/v8.css"}}" /><![endif]-->
+		
+		{{ghost_head}}
+		<script>
+    
+        {{! settings for google account and disqus commenting system (set to null if not available" }}
+    
+			var disqusShortName = null;
+			var gAccount = null; 
+			if (gAccount) {
+				var _gaq =[["_setAccount",gAccount],["_trackPageview"]];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+				g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+				s.parentNode.insertBefore(g,s)}(document,"script"));
+			}
+		
+		</script>
+		
+	</head>
+	<body>
+	
+		{{! headers and footer are set in individual view pages, depending on the context }}
+		{{{body}}}
+		
+		{{! Ghost outputs important scripts and data with this tag }}
+		{{ghost_foot}}
+
+		<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+		
+	</body>
+</html>

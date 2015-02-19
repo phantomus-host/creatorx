@@ -1,0 +1,32 @@
+<!-- Header for posts / pages, must be placed in #post helper -->
+
+<div class="post-cover-image home-style" style="background-size: cover; {{#if image}}background-image:url('{{image}}'){{else}}background-image:url('/assets/images/empty.png'); background-repeat: repeat{{/if}}">
+	<div class="content">
+		<header>
+			<h2>{{title}}</h2>
+		</header>
+		<p class="home-post-author"><strong>{{date format="DD MMMM YYYY"}}</strong> by {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}</p>
+		<p class="home-post-tags">{{tags separator=" " prefix="Tagged with: "}}</p>
+	</div>
+</div>
+
+<header id="header" class="post-header">
+	<h1 id="logo">{{@blog.title}}</h1>
+
+	<nav id="nav">
+		<ul class="wht">
+			{{> "menu-top" }}
+		</ul>
+	</nav>
+	
+	<nav id="nav-mobile">
+		<a href="#mobile-menu" class="icon fa-bars in-post"><span class="label">Menu</span></a>
+	</nav>
+		<nav id="mobile-menu">
+			<ul>
+				{{> "menu-top" }}
+			</ul>
+		</nav>
+	</nav>
+	
+</header>

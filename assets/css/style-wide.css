@@ -1,0 +1,18 @@
+/*
+	CreatorX - a photography theme by Phantomus
+	phantomus.com | @phantomus_host
+*/
+
+body {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body,input,textarea,select {
+	font-size: 17pt;
+}
+
+.post-content {
+	padding-top: 1.8em;
+}
